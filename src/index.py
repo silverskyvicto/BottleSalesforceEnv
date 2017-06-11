@@ -3,7 +3,7 @@ from simple_salesforce import Salesforce
 
 @route('/')
 def index(msg='This page is home page.'):
-    return template('index', msg=msg)
+    return template('index.tpl', msg=msg)
 
 @route('/', method=["POST"])
 def login_salesforce():
